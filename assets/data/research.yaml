@@ -1,0 +1,34 @@
+research:
+  description: Work at the intersection of privacy, robustness, training dynamics,
+    and large-scale learning systems
+  papers:
+  - title: 'Trans-Infinite Entanglement: A Unified Algebraic Framework for Holographic Quantum Error Correction, Dark Sector Cosmology, and Room-Temperature Tabletop Gravity'
+    venue: Physical Review A (American Physical Society) (Under Review)
+    links:
+    - text: Preprint →
+      url: https://drive.google.com/drive/u/0/folders/1bxdc_QVMS6wkYd4gjTDftjh0kB4mUCYu
+  - title: 'Homological Invariants and Spectral Diffusion in Hybrid Homomorphic Encryption: The Cochain Algebraic Transformation'
+    venue:
+    links:
+    - text: Preprint →
+      url:
+  - title: 'Efficient technique to solve a divergent series summation'
+    venue: Science and Engineering Journal, Vol. 25 (Issue 5), p. 34.
+    links:
+    - text: Paper →
+      url: https://app.box.com/s/lrqs5vvoe30l2i50hnfkrarjtx3znhom
+  - title: 'Chronology Protection via Quantum Extremal Islands'
+    venue:
+    links:
+    - text: Preprint →
+      url: https://drive.google.com/drive/folders/1bxdc_QVMS6wkYd4gjTDftjh0kB4mUCYu
+  - title: 'Active Topological Protection: Reinforcement Learning Compensation and Entanglement Decay of Vector Vortex Beams in Anisotropic Turbulence'
+    venue: (In Progress)
+    links:
+    - text: Preprint →
+      url:
+  - title: 'Integrating Digital Twin and Deep Learning for Predictive Maintenance Framework of Industry 4.0 Datasets'
+    venue: (In Progress)
+    links:
+    - text: Preprint →
+      url:

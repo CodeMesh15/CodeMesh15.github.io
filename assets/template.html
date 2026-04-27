@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ hero.name }} | {{ hero.short_role }}</title>
+  <meta name="description"
+    content="{{ hero.name }} - {{ hero.role }}" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0a0a0a] text-zinc-400">
+
+  <!-- HERO -->
+  <header class="relative min-h-screen flex items-center overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ hero.background_image }}');"></div>
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6">
+      <h1 class="text-6xl md:text-8xl font-light text-white">{{ hero.name }}</h1>
+      <p class="mt-6 text-xl md:text-2xl text-zinc-300 max-w-3xl leading-relaxed">
+        {{ hero.description }}
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4 text-sm font-mono">
+        {% if hero.cv_link %}
+        <a href="{{ hero.cv_link }}" download
+          class="px-4 py-2 border border-blue-500 text-blue-400 rounded-full hover:bg-blue-500 hover:text-black transition">
+          Download CV
+        </a>
+        {% endif %}
+        {% if hero.email %}
+        <a href="mailto:{{ hero.email }}"
+          class="px-4 py-2 border border-zinc-700 rounded-full hover:text-blue-400">Email</a>
+        {% endif %}
+        {% if hero.linkedin %}
+        <a href="{{ hero.linkedin }}" target="_blank"
+          class="px-4 py-2 border border-zinc-700 rounded-full hover:text-blue-400">LinkedIn</a>
+        {% endif %}
+        {% if hero.github %}
+        <a href="{{ hero.github }}" target="_blank"
+          class="px-4 py-2 border border-zinc-700 rounded-full hover:text-blue-400">GitHub</a>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 pt-12 pb-24 space-y-24">
+
+    <!-- EXPERIENCE -->
+    <section>
+      <h2 class="text-4xl text-white mb-6">Experience</h2>
+      <p class="text-zinc-400 max-w-2xl mb-16 leading-relaxed">
+        {{ experience.description }}
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-12">
+
+        <!-- Timeline -->
+        <div class="relative">
+          <!-- Vertical Line -->
+          <div class="absolute left-4 top-0 bottom-0 w-px bg-zinc-800"></div>
+
+          <div class="space-y-12 relative">
+            {% for job in experience.jobs %}
+            <!-- Node {{ loop.index }} -->
+            <button onmouseenter="selectExperience({{ loop.index0 }})" class="experience-node relative flex items-center gap-6 group">
+              <div class="node-dot w-8 h-8 rounded-full border-2 {% if loop.first %}border-blue-500 bg-blue-500{% else %}border-zinc-600 bg-[#0a0a0a]{% endif %} transition">
+              </div>
+              <div>
+                <p class="text-white font-medium">{{ job.company }}</p>
+              </div>
+            </button>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Content Panel -->
+        <div class="md:col-span-2">
+          <div id="experienceContent"
+            class="p-8 rounded-2xl bg-[#111111] border border-zinc-800 transition duration-300">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section>
+      <h2 class="text-4xl text-white mb-6">Research</h2>
+      <p class="text-zinc-400 max-w-2xl mb-12 leading-relaxed">
+        {{ research.description }}
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        {% for paper in research.papers %}
+        <div class="p-6 rounded-2xl bg-[#111111] border border-zinc-800{% if paper.links %} hover:border-blue-500 transition{% endif %}">
+          <h3 class="text-zinc-200 font-medium">{{ paper.title }}</h3>
+          <p class="text-sm text-blue-400 mt-2">{{ paper.venue }}</p>
+          {% if paper.links %}
+          <div class="mt-3 flex gap-4 text-sm">
+            {% for link in paper.links %}
+            <a href="{{ link.url }}" target="_blank"
+              class="hover:text-blue-400">{{ link.text }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section>
+      <h2 class="text-4xl text-white mb-6">Things I've Built</h2>
+      <p class="text-zinc-400 max-w-2xl mb-12 leading-relaxed">
+        {{ projects.description }}
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        {% for project in projects.project_list[:projects.featured_count] %}
+        <div class="p-6 rounded-2xl bg-[#111111] border border-zinc-800 hover:border-blue-500 transition">
+          <h3 class="text-zinc-200 font-medium text-lg">{{ project.title }}</h3>
+          <p class="mt-3 text-sm text-zinc-400">{{ project.description }}</p>
+          <a href="{{ project.url }}" target="_blank"
+            class="mt-4 inline-block text-sm hover:text-blue-400 transition">View on GitHub →</a>
+        </div>
+        {% endfor %}
+
+        {% if projects.project_list|length > projects.featured_count %}
+        <div onclick="openModal('projectsModal')"
+          class="p-6 rounded-2xl bg-[#111111] border border-zinc-800 flex items-center justify-center cursor-pointer hover:border-blue-500 transition">
+          <span class="text-blue-400 text-lg">View All Projects →</span>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+
+
+  <!-- PROJECTS MODAL -->
+  <div id="projectsModal" class="fixed inset-0 bg-black/95 hidden z-50 overflow-y-auto">
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <div class="flex justify-between items-center mb-12">
+        <h3 class="text-white text-2xl">All Projects</h3>
+        <button onclick="closeModal('projectsModal')" class="text-zinc-400 hover:text-white text-lg">✕</button>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        {% for project in projects.project_list %}
+        <div class="p-6 rounded-2xl bg-[#111111] border border-zinc-800 hover:border-blue-500 transition">
+          <h3 class="text-zinc-200 font-medium">{{ project.title }}</h3>
+          <p class="mt-3 text-sm text-zinc-400">{{ project.description }}</p>
+          <a href="{{ project.url }}" target="_blank"
+            class="mt-4 inline-block text-sm hover:text-blue-400 transition">View on GitHub →</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t border-zinc-800 py-12 text-center text-sm text-zinc-600">
+    © 2026 {{ hero.name }}
+  </footer>
+
+  <script>
+
+
+    function openModal(id) {
+      document.getElementById(id).classList.remove("hidden");
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add("hidden");
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    // Close any open modal on Escape or backdrop click
+    window.addEventListener("keydown", e => {
+      if (e.key === "Escape") {
+        closeModal("projectsModal");
+      }
+    });
+
+    document.getElementById("projectsModal").addEventListener("click", e => {
+      if (e.target.id === "projectsModal") closeModal("projectsModal");
+    });
+
+    const experiences = [
+      {% for job in experience.jobs %}
+      {
+        title: "{{ job.title }}",
+        duration: "{{ job.duration }}",
+        content: `
+          {% for point in job.points %}
+          <p class="text-zinc-400 mb-4">- {{ point }}</p>
+          {% endfor %}
+        `
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ];
+
+    function selectExperience(index) {
+      const contentDiv = document.getElementById("experienceContent");
+      const exp = experiences[index];
+
+      contentDiv.innerHTML = `
+      <h3 class="text-white text-xl font-medium mb-2">${exp.title}</h3>
+      <p class="text-sm text-blue-400 mb-6">${exp.duration}</p>
+      ${exp.content}
+    `;
+
+      document.querySelectorAll(".node-dot").forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.remove("border-zinc-600", "bg-[#0a0a0a]");
+          dot.classList.add("border-blue-500", "bg-blue-500");
+        } else {
+          dot.classList.remove("border-blue-500", "bg-blue-500");
+          dot.classList.add("border-zinc-600", "bg-[#0a0a0a]");
+        }
+      });
+    }
+
+    // Default selection
+    selectExperience(0);
+
+  </script>
+
+</body>
+
+</html>

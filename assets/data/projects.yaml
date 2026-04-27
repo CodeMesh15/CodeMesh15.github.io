@@ -1,0 +1,82 @@
+projects:
+  description: Systems and tools designed to explore ideas deeply and make them usable.
+  featured_count: 3
+  project_list:
+  - title: RL-Driven Compensation of Vector Vortex Beams in Anisotropic Turbulence
+    description: Complete framework for generating, correcting, and analyzing Vector
+      Vortex Beams in Rayleigh-Benard convective turbulence using model-free RL for
+      Adaptive Optics and topological phase transition analysis.
+    url: https://github.com/CodeMesh15/RL-Driven-Compensation-and-Topological-Analysis-of-Vector-Vortex-Beams-in-Anisotropic-Turbulence
+  - title: AI-Driven Compensation for Anisotropic Optical Turbulence
+    description: B.Tech. project investigating the use of AI to compensate for optical
+      distortions caused by anisotropic, non-Kolmogorov turbulence.
+    url: https://github.com/CodeMesh15/AI-Driven-Compensation-for-Anisotropic-Optical-Turbulence
+  - title: Cooperative MARL Benchmark
+    description: Cooperative, heterogeneous multi-agent reinforcement learning platform
+      with environments and benchmark models for training agents to collaborate on shared
+      tasks, inspired by Amazon Alexa AI work.
+    url: https://github.com/CodeMesh15/Cooperative-MARL-Benchmark
+  - title: QRLgym - Quantum RL Control Environments
+    description: OpenAI Gym-compatible RL environments for simulating and solving quantum
+      control problems, designed for RL research and physics-inspired ML.
+    url: https://github.com/CodeMesh15/QRLgym
+  - title: Fraud Detection Service
+    description: Full-stack application with a Rust Axum backend and frontend dashboard
+      for detecting e-commerce fraud and bot activity. A foundation for anti-automation
+      tracking systems.
+    url: https://github.com/CodeMesh15/fraud-detection-service
+  - title: Video Understanding Toolkit
+    description: Toolkit for video processing including action recognition, visual question
+      answering (VQA), and summarization, inspired by applied science work at Amazon Alexa.
+    url: https://github.com/CodeMesh15/Video-Understanding-Toolkit
+  - title: Simbot Navigation Agent - Dialog-Enabled VLN Framework
+    description: Dialog-enabled agent for visual-language navigation (VLN) in simulated
+      3D environments, capable of following natural language instructions and asking
+      clarifying questions when faced with ambiguity.
+    url: https://github.com/CodeMesh15/Simbot-Navigation-Agent-A-Dialog-Enabled-VLN-Framework
+  - title: LLM Data Pruner - Text Quality Scoring Pipeline
+    description: Data pruning pipeline scoring text documents on quality and aesthetic
+      metrics to filter large datasets and improve LLM training efficiency, inspired
+      by data curation work at Meta AI.
+    url: https://github.com/CodeMesh15/LLM-Data-Pruner-A-Text-Quality-Scoring-Pipeline
+  - title: Audio Denoising RNN
+    description: Deep Recurrent Gated Neural Network for dynamic audio denoising that
+      reconstructs clean audio from noise-corrupted input by estimating and subtracting
+      noise in the spectral domain.
+    url: https://github.com/CodeMesh15/Audio-Denoising-RNN
+  - title: Hierarchical CNN Embeddings
+    description: Deep Hierarchical CNN for learning unsupervised semantic textual embeddings,
+      capturing both local and global textual information.
+    url: https://github.com/CodeMesh15/Hierarchical-CNN-Embeddings
+  - title: Marketplace ML Recommendation and Search Systems
+    description: Core ML systems for a tours and activities marketplace covering content-based
+      and collaborative recommendation, feed ranking, and search retrieval.
+    url: https://github.com/CodeMesh15/Marketplace-ML-Recommendation-and-Search-Systems
+  - title: Deep Quant - Time Series DNNs for Financial Forecasting
+    description: Exploration of Deep Neural Networks for time series modeling of noisy
+      financial market data with various architectures and feature scaling techniques.
+    url: https://github.com/CodeMesh15/Deep-Quant-Time-Series-DNNs-for-Financial-Market-Forecasting
+  - title: FlowSeg - Joint Semantic Segmentation and Optical Flow
+    description: Deep learning approach for simultaneous semantic segmentation and optical
+      flow estimation from video, jointly learning both tasks with advanced CNN architectures.
+    url: https://github.com/CodeMesh15/FlowSeg-Joint-Semantic-Segmentation-and-Optical-Flow-Estimation
+  - title: Equivariant Neural Network Library
+    description: Modular deep learning library for building models that respect data
+      symmetries, leveraging group theory from discrete symmetries to continuous Lie groups.
+    url: https://github.com/CodeMesh15/Equivariant-Neural-Network
+  - title: Neural Additive Models
+    description: Implementation of Neural Additive Models (NAMs) for interpretable
+      machine learning, with a live Streamlit demo for interactive exploration.
+    url: https://github.com/CodeMesh15/Neural-Additive-Models
+  - title: Matroid Secretary Algorithms
+    description: Implementation and analysis of matroid secretary algorithms exploring
+      optimal stopping theory and online combinatorial optimization under uncertainty.
+    url: https://github.com/CodeMesh15/Matroid-Secretary-Algorithms
+  - title: Topological Language Model
+    description: Experimental language model incorporating topological data analysis
+      to improve text representation and modeling capabilities.
+    url: https://github.com/CodeMesh15/Topological-Language-Model
+  - title: Chronology Islands
+    description: Research implementation for the paper on Chronology Protection via
+      Quantum Extremal Islands, exploring quantum gravity and causal structure.
+    url: https://github.com/CodeMesh15/chronology-islands

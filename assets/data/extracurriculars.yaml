@@ -1,0 +1,46 @@
+extracurriculars:
+  description: Resilience, and long-form thinking; Shaped outside the lab.
+  galleries:
+  - id: lifting
+    title: Strength & Athletics
+    display_images:
+    - images/gym/4.jpg
+    - images/gym/2.jpg
+    - images/gym/1.jpg
+    images:
+    - images/gym/1.jpg
+    - images/gym/2.jpg
+    - images/gym/3.jpg
+    - images/gym/4.jpg
+  - id: mountains
+    title: Mountains & Water
+    display_images:
+    - images/travel/1.jpg
+    - images/travel/2.jpg
+    - images/travel/8.jpg
+    images:
+    - images/travel/1.jpg
+    - images/travel/2.jpg
+    - images/travel/3.jpg
+    - images/travel/4.jpg
+    - images/travel/5.jpg
+    - images/travel/6.jpg
+    - images/travel/7.jpg
+    - images/travel/8.jpg
+  - id: creative
+    title: Creative Work
+    display_images:
+    - images/drawing/4.PNG
+    - images/drawing/1.jpg
+    - images/drawing/3.jpg
+    images:
+    - images/drawing/1.jpg
+    - images/drawing/2.jpg
+    - images/drawing/3.jpg
+    - images/drawing/4.PNG
+    - images/drawing/5.jpg
+    - images/drawing/6.jpg
+    - images/drawing/7.jpg
+    - images/drawing/8.jpg
+    - images/drawing/9.jpg
+    - images/drawing/10.jpg

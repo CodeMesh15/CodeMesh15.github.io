@@ -1,0 +1,32 @@
+experience:
+  description: A progression through scale, research depth, and production responsibility.
+  jobs:
+  - company: CodeStory (YC S23)
+    title: "ML Engineering Intern"
+    duration: "May 2024 - July 2024 - Remote"
+    points:
+    - "Agentic Workflows: Engineered multi-step prompt chains for Aide-Agent, using AST-based reconciliation to achieve 95%+ precision on automated multi-file edits."
+    - "Data Pipelines: Built a scalable, multi-tenant data pipeline with Apache Airflow for seamless data ingestion, transformation, and delivery across 100+ datasets."
+    - "Eval Infrastructure: Designed a containerized SWE-bench harness to benchmark model performance, automating pass@k tracking and regression testing."
+    - "AST-Aware RAG: Built a Rust-powered code indexing pipeline using Tree-sitter and Voyage AI to enable high-recall semantic search across large repositories."
+  - company: Future Today Inc.
+    title: "Data Science Intern"
+    duration: "June 2025 - August 2025"
+    points:
+    - "Built Python-based ETL and web automation (Selenium/Octoparse) to aggregate and reconcile streaming datasets (TubiTV, Pluto TV, Roku, IMDb) with schema validation, de-duplication, and IMDb ID matching."
+    - "Developed an email automation and alerting system: scheduled jobs emit run summaries, failure alerts, and anomaly digests with attached logs/metrics to stakeholders, enabling rapid incident response and SLA monitoring."
+    - "Performed content analytics: genre/time-series trend modeling (weekly adds/removals, churn), title lifecycle cohorts, coverage gap analysis across platforms, and A/B-style experiments on recommendation features; shipped dashboards/notebooks with KPI tracking (freshness, match precision, anomaly rate)."
+  - company: AGIBOT
+    title: "AI Robotics Intern"
+    duration: "Nov 2025 - Jan 2026 - Remote"
+    points:
+    - "Engineered VLA models and Deep RL agents (PPO) in high-fidelity simulations for dynamic locomotion, successfully mitigating the sim-to-real gap for hardware deployment."
+    - "Designed Whole-Body Control (WBC) and MPC algorithms using C++ and Eigen to translate high-level neural policies into precise, real-time joint torque commands."
+    - "Architected low-latency ROS2 to fuse streaming LiDAR, IMU, and vision data, optimizing physical control loops for deep learning inference."
+  - company: Peking University
+    title: "Peking University - Research Intern"
+    duration: "Jan 2025 - Apr 2025"
+    points:
+    - "Worked under the guidance of Prof. Shen Xiaofei, focusing on variational algorithms for Open Systems and Linear Algebra."
+    - "Variational Quantum Algorithms: Implemented hybrid quantum-classical algorithms for simulating open quantum systems."
+    - "Numerical Simulations: Developed and optimized simulations using Python-based frameworks such as QuTiP and SciPy for solving quantum dynamics."
