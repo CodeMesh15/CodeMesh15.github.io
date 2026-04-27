@@ -84,6 +84,57 @@
       </div>
     </section>
 
+    <!-- RESEARCH EXPERIENCE -->
+    <section>
+      <h2 class="text-4xl text-white mb-4">Research Experience</h2>
+      <p class="text-zinc-400 max-w-2xl mb-12 leading-relaxed">
+        {{ research_experience.description }}
+      </p>
+
+      <div class="space-y-10">
+        {% for pos in research_experience.positions %}
+        <div class="flex gap-6 group">
+          <!-- Left accent bar -->
+          <div class="flex-shrink-0 flex flex-col items-center pt-1">
+            <div class="w-px flex-1 bg-zinc-800" style="min-height: 24px;"></div>
+            <div class="w-2 h-2 rounded-full my-2 flex-shrink-0 bg-zinc-400"></div>
+            <div class="w-px flex-1 bg-zinc-800"></div>
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1 pb-4">
+            <!-- Title row -->
+            <h3 class="text-zinc-100 font-semibold text-lg leading-snug">{{ pos.title }}</h3>
+
+            <!-- Meta row: institution · duration -->
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1.5 mb-3">
+              <span class="text-sm text-zinc-300">{{ pos.institution }}</span>
+              <span class="text-zinc-700 select-none">·</span>
+              <span class="text-sm text-zinc-500 font-mono">{{ pos.duration }}</span>
+            </div>
+
+            <!-- Advisor -->
+            <div class="flex items-center gap-2 mb-4">
+              <span class="text-xs uppercase tracking-widest text-zinc-600">Advisor</span>
+              <span class="text-xs text-zinc-600">—</span>
+              <span class="text-sm font-medium text-white">{{ pos.advisor }}</span>
+            </div>
+
+            <!-- Bullet points -->
+            <ul class="space-y-2">
+              {% for point in pos.points %}
+              <li class="flex gap-3 items-start">
+                <span class="mt-2 w-1 h-1 rounded-full flex-shrink-0 bg-zinc-600"></span>
+                <p class="text-zinc-400 text-sm leading-relaxed">{{ point }}</p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
     <!-- RESEARCH -->
     <section>
       <h2 class="text-4xl text-white mb-6">Research</h2>
@@ -226,6 +277,8 @@
 
     // Default selection
     selectExperience(0);
+
+
 
   </script>
 

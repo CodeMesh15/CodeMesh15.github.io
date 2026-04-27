@@ -1,0 +1,39 @@
+research_experience:
+  description: Active research collaborations at the intersection of quantum optics, cryptography, and machine learning.
+  positions:
+  - title: RL-Driven Compensation for Anisotropic Optical Turbulence
+    advisor: Prof. Maruthi M. Brundavanam
+    institution: IIT Kharagpur
+    duration: Nov 2025 – Present
+    color: "#6366f1"
+    points:
+    - "Designed an experimental testbed to generate Vector Vortex Beams (VVB) and simulate anisotropic non-Kolmogorov turbulence."
+    - "Engineered a PPO reinforcement learning agent for real-time SLM control and closed-loop wavefront correction."
+    - "Empirical findings are currently being drafted into a manuscript."
+  - title: "Hybrid Homomorphic Encryption: The Cochain Algebraic Transformation"
+    advisor: Prof. Dr. Ratna Dutta
+    institution: IIT Kharagpur
+    duration: Present
+    color: "#a78bfa"
+    points:
+    - "Developed the Cochain Algebraic Transformation (CAT) and the SIMPLEX cipher to maximize algebraic entanglement and bound exact CKKS noise propagation."
+    - "Validated that CAT linear layers yield strictly higher Castelnuovo-Mumford regularity, exponentially slowing Gröbner basis (F4) attacks compared to MDS matrices."
+    - "Drafting a theoretical manuscript detailing homological invariants and spectral diffusion metrics."
+  - title: Deep Learning for Predictive Maintenance Framework of Industry 4.0 Datasets
+    advisor: Prof. Pabitra Mitra
+    institution: Center for Computational & Data Science, IIT Kharagpur
+    duration: Present
+    color: "#34d399"
+    points:
+    - "Refining predictive maintenance ML methodology for an Industry 4.0 manuscript, actively addressing journal peer reviews."
+    - "Engineered CNN and LSTM models to predict rare machinery failures, implementing SMOTE for extreme class imbalance."
+    - "Benchmarked deep learning models against XGBoost baselines across multiple Industry 4.0 datasets."
+  - title: Variational Algorithms for Open Quantum Systems
+    advisor: Prof. Shen Xiaofei
+    institution: Peking University
+    duration: Jan 2025 – Apr 2025
+    color: "#f59e0b"
+    points:
+    - "Focused on variational algorithms for open quantum systems and linear algebra problems."
+    - "Implemented hybrid quantum-classical variational algorithms using QuTiP and SciPy for simulating Lindblad master equations."
+    - "Developed and optimized numerical simulations benchmarking variational and exact diagonalization methods for dissipative quantum dynamics."

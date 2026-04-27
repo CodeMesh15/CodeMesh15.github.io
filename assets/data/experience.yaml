@@ -23,10 +23,4 @@ experience:
     - "Engineered VLA models and Deep RL agents (PPO) in high-fidelity simulations for dynamic locomotion, successfully mitigating the sim-to-real gap for hardware deployment."
     - "Designed Whole-Body Control (WBC) and MPC algorithms using C++ and Eigen to translate high-level neural policies into precise, real-time joint torque commands."
     - "Architected low-latency ROS2 to fuse streaming LiDAR, IMU, and vision data, optimizing physical control loops for deep learning inference."
-  - company: Peking University
-    title: "Peking University - Research Intern"
-    duration: "Jan 2025 - Apr 2025"
-    points:
-    - "Worked under the guidance of Prof. Shen Xiaofei, focusing on variational algorithms for Open Systems and Linear Algebra."
-    - "Variational Quantum Algorithms: Implemented hybrid quantum-classical algorithms for simulating open quantum systems."
-    - "Numerical Simulations: Developed and optimized simulations using Python-based frameworks such as QuTiP and SciPy for solving quantum dynamics."
+

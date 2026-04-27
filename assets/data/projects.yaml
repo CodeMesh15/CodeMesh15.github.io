@@ -2,20 +2,21 @@ projects:
   description: Systems and tools designed to explore ideas deeply and make them usable.
   featured_count: 3
   project_list:
-  - title: RL-Driven Compensation of Vector Vortex Beams in Anisotropic Turbulence
-    description: Complete framework for generating, correcting, and analyzing Vector
-      Vortex Beams in Rayleigh-Benard convective turbulence using model-free RL for
-      Adaptive Optics and topological phase transition analysis.
-    url: https://github.com/CodeMesh15/RL-Driven-Compensation-and-Topological-Analysis-of-Vector-Vortex-Beams-in-Anisotropic-Turbulence
-  - title: AI-Driven Compensation for Anisotropic Optical Turbulence
-    description: B.Tech. project investigating the use of AI to compensate for optical
-      distortions caused by anisotropic, non-Kolmogorov turbulence.
-    url: https://github.com/CodeMesh15/AI-Driven-Compensation-for-Anisotropic-Optical-Turbulence
-  - title: Cooperative MARL Benchmark
-    description: Cooperative, heterogeneous multi-agent reinforcement learning platform
-      with environments and benchmark models for training agents to collaborate on shared
-      tasks, inspired by Amazon Alexa AI work.
-    url: https://github.com/CodeMesh15/Cooperative-MARL-Benchmark
+  - title: Adversarial Approximate Inference
+    description: A deep generative model that learns to infer Electroglottograph (EGG)
+      signals directly from speech using variational inference and adversarial training,
+      removing the need for specialized hardware in glottal signal analysis.
+    url: https://github.com/CodeMesh15/Adversial-Approximate-Inference
+  - title: Deep Dilated Convolutional Network
+    description: Deep convolutional architecture using dilated convolutions to capture
+      multi-scale temporal and spatial features without losing resolution, designed for
+      sequence modeling and dense prediction tasks.
+    url: https://github.com/CodeMesh15/Deep-Dilated-Convolutional-Network
+  - title: Equivariant Neural Network Library
+    description: Modular deep learning library for building models that respect data
+      symmetries — leveraging group theory from discrete symmetries (rotations, reflections)
+      to continuous Lie groups and gauge symmetries for more generalizable ML models.
+    url: https://github.com/CodeMesh15/Equivariant-Neural-Network
   - title: QRLgym - Quantum RL Control Environments
     description: OpenAI Gym-compatible RL environments for simulating and solving quantum
       control problems, designed for RL research and physics-inspired ML.
