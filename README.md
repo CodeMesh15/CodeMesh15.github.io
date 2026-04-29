@@ -1,4 +1,4 @@
-# Owais Makroo Portfolio
+# Vedant Meshram Portfolio
 
 A personal portfolio built with HTML, Tailwind CSS, and a custom Python static site generator.
 
