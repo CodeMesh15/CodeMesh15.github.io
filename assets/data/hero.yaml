@@ -3,10 +3,9 @@ hero:
   short_role: Machine Learning Engineer
   role: Machine Learning Researcher focusing on privacy, robustness, and training
     dynamics. 
-  description: I build AI systems that live between clean math and messy production,
-    thinking about privacy, robustness, machine unlearning, and training dynamics.
+  description: Research-driven Machine Learning Engineer specializing in deep generative architectures and multimodal AI. I leverage reinforcement learning and advanced computer vision methodologies to develop robust, scalable algorithms that bridge theoretical research and applied intelligent systems.
   cv_link: assets/cv.pdf
   email: meshravedant@gmail.com
   linkedin: https://www.linkedin.com/in/vedant-m-341115123/
   github: https://github.com/CodeMesh15
-  background_image: images/background.jpd
+  background_image: images/background.jpg
