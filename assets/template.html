@@ -148,9 +148,11 @@
           <p class="text-sm text-blue-400 mt-2">{{ paper.venue }}</p>
           {% if paper.links %}
           <div class="mt-3 flex gap-4 text-sm">
-            {% for label, url in paper.links.items() %}
-            <a href="{{ url }}" target="_blank"
-              class="hover:text-blue-400">{{ label }} →</a>
+            {% for link in paper.links %}
+            {% if link.url %}
+            <a href="{{ link.url }}" target="_blank"
+              class="hover:text-blue-400">{{ link.text }}</a>
+            {% endif %}
             {% endfor %}
           </div>
           {% endif %}
