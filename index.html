@@ -8,17 +8,22 @@
   <meta name="description"
     content="Vedant Meshram - Machine Learning Researcher focusing on privacy, robustness, and training dynamics." />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-photo {
+      background-image: url("images/background.jpeg");
+    }
+  </style>
 </head>
 
 <body class="bg-[#0a0a0a] text-zinc-400">
 
   <!-- HERO -->
-  <header class="relative min-h-[80vh] flex items-center overflow-hidden">
-    <div class="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat" style="background-image: url('images/background.jpg');"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#0a0a0a]"></div>
-    <div class="relative z-10 max-w-5xl mx-auto px-6 py-20">
-      <h1 class="text-6xl md:text-8xl font-light text-white tracking-tight">Vedant Meshram</h1>
-      <p class="mt-8 text-xl md:text-2xl text-zinc-300 max-w-3xl leading-relaxed font-light">
+  <header class="relative min-h-screen flex items-center overflow-hidden">
+    <div class="hero-photo absolute inset-0 bg-cover bg-center"></div>
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6">
+      <h1 class="text-6xl md:text-8xl font-light text-white">Vedant Meshram</h1>
+      <p class="mt-6 text-xl md:text-2xl text-zinc-300 max-w-3xl leading-relaxed">
         Research-driven Machine Learning Engineer specializing in <span class="text-white">deep generative architectures</span> and <span class="text-white">multimodal AI</span>. I leverage reinforcement learning and advanced computer vision methodologies to develop robust, scalable algorithms that bridge theoretical research and applied intelligent systems.
       </p>
       <div class="mt-8 flex flex-wrap gap-4 text-sm font-mono">

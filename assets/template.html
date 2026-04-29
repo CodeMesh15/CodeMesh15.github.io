@@ -50,7 +50,7 @@
     <section>
       <h2 class="text-4xl text-white mb-6">Experience</h2>
       <p class="text-zinc-400 max-w-2xl mb-16 leading-relaxed">
-        {{ experience.description }}
+        A progression through scale, research depth, and production responsibility.
       </p>
 
       <div class="grid md:grid-cols-3 gap-12">
@@ -92,7 +92,7 @@
       </p>
 
       <div class="space-y-10">
-        {% for pos in research_experience.positions %}
+        {% for exp in research_experience.experience_list %}
         <div class="flex gap-6 group">
           <!-- Left accent bar -->
           <div class="flex-shrink-0 flex flex-col items-center pt-1">
@@ -104,25 +104,25 @@
           <!-- Content -->
           <div class="flex-1 pb-4">
             <!-- Title row -->
-            <h3 class="text-zinc-100 font-semibold text-lg leading-snug">{{ pos.title }}</h3>
+            <h3 class="text-zinc-100 font-semibold text-lg leading-snug">{{ exp.title }}</h3>
 
             <!-- Meta row: institution · duration -->
             <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1.5 mb-3">
-              <span class="text-sm text-zinc-300">{{ pos.institution }}</span>
+              <span class="text-sm text-zinc-300">{{ exp.institution }}</span>
               <span class="text-zinc-700 select-none">·</span>
-              <span class="text-sm text-zinc-500 font-mono">{{ pos.duration }}</span>
+              <span class="text-sm text-zinc-500 font-mono">{{ exp.duration }}</span>
             </div>
 
             <!-- Advisor -->
             <div class="flex items-center gap-2 mb-4">
               <span class="text-xs uppercase tracking-widest text-zinc-600">Advisor</span>
               <span class="text-xs text-zinc-600">—</span>
-              <span class="text-sm font-medium text-white">{{ pos.advisor }}</span>
+              <span class="text-sm font-medium text-white">{{ exp.advisor }}</span>
             </div>
 
             <!-- Bullet points -->
             <ul class="space-y-2">
-              {% for point in pos.points %}
+              {% for point in exp.points %}
               <li class="flex gap-3 items-start">
                 <span class="mt-2 w-1 h-1 rounded-full flex-shrink-0 bg-zinc-600"></span>
                 <p class="text-zinc-400 text-sm leading-relaxed">{{ point }}</p>
@@ -143,14 +143,14 @@
       </p>
       <div class="grid md:grid-cols-2 gap-6">
         {% for paper in research.papers %}
-        <div class="p-6 rounded-2xl bg-[#111111] border border-zinc-800{% if paper.links %} hover:border-blue-500 transition{% endif %}">
+        <div class="p-6 rounded-2xl bg-[#111111] border border-zinc-800 hover:border-blue-500 transition">
           <h3 class="text-zinc-200 font-medium">{{ paper.title }}</h3>
           <p class="text-sm text-blue-400 mt-2">{{ paper.venue }}</p>
           {% if paper.links %}
           <div class="mt-3 flex gap-4 text-sm">
-            {% for link in paper.links %}
-            <a href="{{ link.url }}" target="_blank"
-              class="hover:text-blue-400">{{ link.text }}</a>
+            {% for label, url in paper.links.items() %}
+            <a href="{{ url }}" target="_blank"
+              class="hover:text-blue-400">{{ label }} →</a>
             {% endfor %}
           </div>
           {% endif %}
@@ -167,7 +167,7 @@
         {{ projects.description }}
       </p>
       <div class="grid md:grid-cols-2 gap-6">
-        {% for project in projects.project_list[:projects.featured_count] %}
+        {% for project in projects.project_list[:3] %}
         <div class="p-6 rounded-2xl bg-[#111111] border border-zinc-800 hover:border-blue-500 transition">
           <h3 class="text-zinc-200 font-medium text-lg">{{ project.title }}</h3>
           <p class="mt-3 text-sm text-zinc-400">{{ project.description }}</p>
@@ -176,7 +176,7 @@
         </div>
         {% endfor %}
 
-        {% if projects.project_list|length > projects.featured_count %}
+        {% if projects.project_list|length > 3 %}
         <div onclick="openModal('projectsModal')"
           class="p-6 rounded-2xl bg-[#111111] border border-zinc-800 flex items-center justify-center cursor-pointer hover:border-blue-500 transition">
           <span class="text-blue-400 text-lg">View All Projects →</span>
