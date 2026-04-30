@@ -28,6 +28,7 @@ def build():
     
     template = env.get_template('template.html')
     rendered_html = template.render(**data)
+    rendered_html = "\n".join(line.rstrip() for line in rendered_html.splitlines()).rstrip() + "\n"
     
     with open('index.html', 'w', encoding='utf-8') as file:
         file.write(rendered_html)

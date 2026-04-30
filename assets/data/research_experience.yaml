@@ -4,7 +4,7 @@ research_experience:
   - title: RL-Driven Compensation for Anisotropic Optical Turbulence
     advisor: Prof. Maruthi M. Brundavanam
     institution: IIT Kharagpur
-    duration: Nov 2025 – Present
+    duration: Nov 2025 - Present
     color: "#6366f1"
     points:
     - "Designed an experimental testbed to generate Vector Vortex Beams (VVB) and simulate anisotropic non-Kolmogorov turbulence."
@@ -17,7 +17,7 @@ research_experience:
     color: "#a78bfa"
     points:
     - "Developed the Cochain Algebraic Transformation (CAT) and the SIMPLEX cipher to maximize algebraic entanglement and bound exact CKKS noise propagation."
-    - "Validated that CAT linear layers yield strictly higher Castelnuovo-Mumford regularity, exponentially slowing Gröbner basis (F4) attacks compared to MDS matrices."
+    - "Validated that CAT linear layers yield strictly higher Castelnuovo-Mumford regularity, exponentially slowing Grobner basis (F4) attacks compared to MDS matrices."
     - "Drafting a theoretical manuscript detailing homological invariants and spectral diffusion metrics."
   - title: Deep Learning for Predictive Maintenance Framework of Industry 4.0 Datasets
     advisor: Prof. Pabitra Mitra
@@ -31,7 +31,7 @@ research_experience:
   - title: Variational Algorithms for Open Quantum Systems
     advisor: Prof. Shen Xiaofei
     institution: Peking University
-    duration: Jan 2025 – Apr 2025
+    duration: Jan 2025 - Apr 2025
     color: "#f59e0b"
     points:
     - "Focused on variational algorithms for open quantum systems and linear algebra problems."
